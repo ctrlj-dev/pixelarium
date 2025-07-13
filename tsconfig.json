@@ -14,7 +14,7 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "typeRoots": ["node_modules/@types", "src/@types", "src/setuTests.d.ts"],
+    "typeRoots": ["node_modules/@types"],
     "plugins": [
       {
         "name": "next"
@@ -22,24 +22,22 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"],
-      "@components/*": ["components/*"],
-      "@types/*": ["lib/types/*"],
-      "@hooks/*": ["lib/hooks/*"],
-      "@utils/*": ["lib/utils/*"]
+      "@components/*": ["src/components/*"],
+      "@types/*": ["src/lib/types/*"],
+      "@hooks/*": ["src/lib/hooks/*"],
+      "@utils/*": ["src/lib/utils/*"]
     }
   },
-  "includes": [
+  "include": [
     "next-env.d.ts",
+    "jest.setup.ts",
+    ".next/types/**/*.ts",
     "**/*.ts",
     "**/*.tsx",
     "**/*.js",
     "**/*.graphql",
     "**/*.gql",
-    "**/*.json",
-    ".next/types/**/*.ts",
-    "./jest.setup.ts"
+    "**/*.json"
   ],
-  "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"]
+  "exclude": ["node_modules"]
 }

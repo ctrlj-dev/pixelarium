@@ -22,10 +22,12 @@
     ],
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["src/components/*"],
-      "@types/*": ["src/lib/types/*"],
-      "@hooks/*": ["src/lib/hooks/*"],
-      "@utils/*": ["src/lib/utils/*"]
+      "@/*": ["./src/*"],
+      "@/types/*": ["@types/*"],
+      "@components/*": ["components/*"],
+      "@hooks/*": ["lib/hooks/*"],
+      "@hocs/*": ["lib/hocs/*"],
+      "@utils/*": ["lib/utils/*"]
     }
   },
   "include": [

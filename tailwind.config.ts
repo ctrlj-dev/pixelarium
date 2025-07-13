@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        sans: ['var(--font-poppins)', 'sans-serif'],
+        sans: ['var(--font-geist-sans)', 'sans-serif'],
       },
       colors: {
         background: 'var(--background)',

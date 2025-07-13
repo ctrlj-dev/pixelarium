@@ -1,0 +1,9 @@
+// src/app/(with-session)/layout.tsx
+'use client';
+
+import { SessionProvider } from 'next-auth/react';
+import type { ReactNode } from 'react';
+
+export default function SessionLayout({ children }: { children: ReactNode }) {
+  return <SessionProvider>{children}</SessionProvider>;
+}
